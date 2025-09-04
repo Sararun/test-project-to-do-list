@@ -8,6 +8,10 @@
    ```bash
    cp .env.example .env
    
-3. Зайти в контейнер nginx-unit и выполнить миграции с наполнением БД:
+3. Запустить сборку и работу
+   ```bash
+   docker-compose up -d --build
+   
+4. Зайти в контейнер nginx-unit и выполнить миграции с наполнением БД:
       ```bash
    php artisan migrate:fresh --seed
